@@ -15,8 +15,8 @@ public class leetcode_01 {
         return [0, 1].
     * */
     public static void main(String[] args) {
-        System.out.println(15/10);
-        System.out.println(15%10);
+        System.out.println(5/10);
+        System.out.println(5%10);
 
         int[] arry ={1,2,3,4,5,6,7};
         int target =8;

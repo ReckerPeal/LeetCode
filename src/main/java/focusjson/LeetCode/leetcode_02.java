@@ -20,6 +20,7 @@ public class leetcode_02 {
     public  ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode header = new ListNode(0);
         ListNode p = l1, q = l2, current = header;
+        //设置进位
         int carry = 0;
         while (p != null && q != null) {
             int sum = p.val + q.val + carry;
@@ -32,9 +33,9 @@ public class leetcode_02 {
             if (q != null) {
                 q = q.next;
             }
-            if (carry > 0) {
+            /*if (carry > 0) {
                 current.next = new ListNode(carry);
-            }
+            }*/
         }
         return header.next;
     }
